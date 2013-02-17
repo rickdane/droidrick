@@ -14,72 +14,25 @@ import java.util.Map;
 /**
  * Created with IntelliJ IDEA.
  * User: user
- * Date: 2/16/13
- * Time: 11:16 PM
+ * Date: 2/17/13
+ * Time: 10:32 AM
  * To change this template use File | Settings | File Templates.
  */
-public class DatabaseHandler extends SQLiteOpenHelper {
+public abstract class DatabaseHandler extends SQLiteOpenHelper {
 
-    // All Static variables
-    // Database Version
-    private static final int DATABASE_VERSION = 1;
-
-    // Database Name
-    private static final String DATABASE_NAME = "farmersMarkets";
-
-    // Contacts table name
-    private static final String TABLE_NAME = "markets";
 
     // Contacts Table Columns names
     private static final String KEY_ID = "id";
 
-    final static String[] schema = new String[]{
-            "market_id",
-            "name",
-            "website",
-            "street",
-            "city",
-            "county",
-            "state",
-            "zipcode",
-            "schedule",
-            "longitude",
-            "latitude",
-            "location",
-            "credit",
-            "wic",
-            "wic_cash",
-            "sfmnp",
-            "bakedgoods",
-            "cheese",
-            "crafts",
-            "flowers",
-            "eggs",
-            "seafood",
-            "herbs",
-            "vegetables",
-            "honey",
-            "jams",
-            "maple",
-            "meat",
-            "nursery",
-            "nuts",
-            "plants",
-            "poultry",
-            "prepared",
-            "soap",
-            "trees",
-            "wine",
-            "update_time"
-    };
+    private String TABLE_NAME;
 
-    public static String[] getSchema() {
-        return schema;
-    }
+    protected String[] schema;
 
 
-    public DatabaseHandler(Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    public DatabaseHandler(String[] schema, android.content.Context context, java.lang.String name, android.database.sqlite.SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, null, version);
+        TABLE_NAME = name;
+        this.schema = schema;
     }
 
     // Creating Tables

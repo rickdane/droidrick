@@ -1,13 +1,12 @@
 package com.example.androidandroid.dataprocessing;
 
-import android.os.Environment;
-import android.util.Log;
 import com.example.androidandroid.dao.DatabaseHandler;
+import com.example.androidandroid.dao.FarmersMarketsDatabaseHandler;
+import com.example.androidandroid.dao.ZipcodesDatabaseHandler;
 
 import java.io.*;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -21,10 +20,11 @@ public class DataLoader {
 
     public static void test(InputStream inputStream, final DatabaseHandler dbHandler) {
 
-        //reloadDbFromScratchHelper(inputStream, dbHandler);
+        //     reloadDbFromScratchHelper(inputStream, dbHandler, ZipcodesDatabaseHandler.getSchema());
 
+        // Collection<Map<String, String>> responses = dbHandler.geoSearch(-76.1354, 36.8419, 1);
 
-        Collection<Map<String, String>> responses = dbHandler.geoSearch(-76.1354, 36.8419, 1);
+        Collection<Map<String, String>> responses = dbHandler.findByField("city", "VACAVILLE");
 
         responses = null;
     }
@@ -35,8 +35,8 @@ public class DataLoader {
      * @param inputStream
      * @param dbHandler
      */
-    protected static void reloadDbFromScratchHelper(InputStream inputStream, final DatabaseHandler dbHandler) {
-        dbHandler.truncate();
+    protected static void reloadDbFromScratchHelper(InputStream inputStream, final DatabaseHandler dbHandler, final String[] schema) {
+        //   dbHandler.truncate();
         dbHandler.onUpgrade(null, 1, 2);
 
         loadData(inputStream, new Closure() {
@@ -46,8 +46,8 @@ public class DataLoader {
                     String[] columns = line.split("\\|");
                     int i = 0;
                     for (String column : columns) {
-                        if (DatabaseHandler.getSchema().length > i) {
-                            String key = DatabaseHandler.getSchema()[i];
+                        if (schema.length > i) {
+                            String key = schema[i];
                             if (key != null) {
                                 entry.put(key, column);
                             }
@@ -59,6 +59,7 @@ public class DataLoader {
             }
         }, 1);
     }
+
 
     public interface Closure {
 

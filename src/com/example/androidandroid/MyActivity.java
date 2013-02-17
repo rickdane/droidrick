@@ -5,10 +5,11 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.*;
 import com.example.androidandroid.dao.DatabaseHandler;
+import com.example.androidandroid.dao.FarmersMarketsDatabaseHandler;
+import com.example.androidandroid.dao.ZipcodesDatabaseHandler;
 import com.example.androidandroid.dataprocessing.DataLoader;
 
 import java.io.IOException;
@@ -43,9 +44,12 @@ public class MyActivity extends Activity {
 
         try {
 
-            DatabaseHandler dbHandler   = new DatabaseHandler(getBaseContext());
+          //  DatabaseHandler dbHandler   = new FarmersMarketsDatabaseHandler(getBaseContext());
+            DatabaseHandler dbHandler   = new ZipcodesDatabaseHandler(getBaseContext());
 
-            InputStream inputStream = getAssets().open("farmers_market.csv");
+            String assetName = "zip_codes_city_state_data.csv";              //farmers_market.csv
+
+            InputStream inputStream = getAssets().open(assetName);
             DataLoader.test(inputStream, dbHandler);
         } catch (IOException e) {
             e.printStackTrace();

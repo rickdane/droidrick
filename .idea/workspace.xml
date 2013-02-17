@@ -27,15 +27,16 @@
     <list default="true" id="d0abb1e4-94a4-4592-a940-346e3a66e9b2" name="Default" comment="" />
     <ignored path="androidandroid.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/MyActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361086696766" ignored="false" />
+    <file path="/MyActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361126307907" ignored="false" />
     <file path="/Dummy.txt" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361008651346" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361048961874" ignored="false" />
     <file path="/DrawView.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361057270938" ignored="false" />
     <file path="/Draw.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361055668986" ignored="false" />
     <file path="/ViewContainer.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361056626651" ignored="false" />
-    <file path="/DataLoader.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361124549852" ignored="false" />
-    <file path="/DatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361124657453" ignored="false" />
-    <file path="/fragment.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361091270730" ignored="false" />
+    <file path="/DataLoader.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361128573063" ignored="false" />
+    <file path="/DatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361127071543" ignored="false" />
+    <file path="/fragment.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361125467421" ignored="false" />
+    <file path="/ZipcodesDatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361127085404" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +86,36 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/androidandroid/dataprocessing/DataLoader.java" line="28" class="com.example.androidandroid.dataprocessing.DataLoader" package="com.example.androidandroid.dataprocessing">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/androidandroid/dataprocessing/DataLoader.java" line="26" class="com.example.androidandroid.dataprocessing.DataLoader" package="com.example.androidandroid.dataprocessing">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -106,19 +137,30 @@
       <file leaf-file-name="DataLoader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/dataprocessing/DataLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="38" selection-start="710" selection-end="710" vertical-scroll-proportion="0.27931035">
+            <state line="26" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.44031832">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1225#1241#0" expanded="true" />
+                <element signature="e#1285#2005#0" expanded="true" />
+                <element signature="e#1447#1463#0" expanded="true" />
+                <element signature="e#1994#1995#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/dao/DatabaseHandler.java">
+      <file leaf-file-name="FarmersMarketsDatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/dao/FarmersMarketsDatabaseHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="0" selection-start="4794" selection-end="4794" vertical-scroll-proportion="0.0">
+            <state line="81" column="22" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZipcodesDatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/dao/ZipcodesDatabaseHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="35" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,8 +178,19 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.0">
+            <state line="47" column="0" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/dao/DatabaseHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="0" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,6 +217,8 @@
         <option value="$PROJECT_DIR$/src/com/example/androidandroid/dao/beans/FarmersMarket.java" />
         <option value="$PROJECT_DIR$/src/com/example/androidandroid/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/androidandroid/dao/DatabaseHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/example/androidandroid/dao/FarmersMarketsDatabaseHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/example/androidandroid/dao/ZipcodesDatabaseHandler.java" />
         <option value="$PROJECT_DIR$/src/com/example/androidandroid/dataprocessing/DataLoader.java" />
       </list>
     </option>
@@ -393,7 +448,11 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.androidandroid.dao" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/src/com/example/androidandroid" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -579,14 +638,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1537" height="905" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983211" sideWeight="0.5284016" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.58256274" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43989432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -599,7 +659,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22296843" sideWeight="0.41743726" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22296843" sideWeight="0.5601057" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48595506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907993" sideWeight="0.6050198" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -607,7 +667,6 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907993" sideWeight="0.6050198" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.289456" sideWeight="0.4966975" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -671,34 +730,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/example/androidandroid/Manifest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="69" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/adt-bundle-linux-x86_64/sdk/platforms/android-17/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="297" column="16" selection-start="12141" selection-end="12141" vertical-scroll-proportion="0.31130064" />
@@ -731,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/ViewContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="39" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/DrawView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="54" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
@@ -748,6 +772,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Downloads/adt-bundle-linux-x86_64/sdk/platforms/android-17/android.jar!/android/database/sqlite/SQLiteDatabase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="35" selection-start="6631" selection-end="6631" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/Draw.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="38" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
@@ -755,31 +784,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Downloads/adt-bundle-linux-x86_64/sdk/platforms/android-17/android.jar!/android/database/sqlite/SQLiteDatabase.class">
+    <entry file="jar://$USER_HOME$/Downloads/adt-bundle-linux-x86_64/sdk/platforms/android-17/android.jar!/android/database/sqlite/SQLiteOpenHelper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="35" selection-start="6631" selection-end="6631" vertical-scroll-proportion="0.0" />
+        <state line="7" column="27" selection-start="221" selection-end="352" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/ViewContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="39" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.0">
+        <state line="47" column="0" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/dao/FarmersMarketsDatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="22" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/dao/ZipcodesDatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="35" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/zip_codes_city_state_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="40" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/dao/DatabaseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="0" selection-start="4794" selection-end="4794" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="83" column="0" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/androidandroid/dataprocessing/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="38" selection-start="710" selection-end="710" vertical-scroll-proportion="0.27931035">
+        <state line="26" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.44031832">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1225#1241#0" expanded="true" />
+            <element signature="e#1285#2005#0" expanded="true" />
+            <element signature="e#1447#1463#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
           </folding>
         </state>
       </provider>
