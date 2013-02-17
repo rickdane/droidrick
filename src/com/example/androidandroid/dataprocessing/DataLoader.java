@@ -21,10 +21,10 @@ public class DataLoader {
 
     public static void test(InputStream inputStream, final DatabaseHandler dbHandler) {
 
-        //   reloadDbFromScratchHelper(inputStream, dbHandler);
+        //reloadDbFromScratchHelper(inputStream, dbHandler);
 
 
-        Collection<Map<String, String>> responses = dbHandler.findByField("zipcode", "23462");
+        Collection<Map<String, String>> responses = dbHandler.geoSearch(-76.1354, 36.8419, 1);
 
         responses = null;
     }

@@ -91,7 +91,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             if (i != 0) {
                 schemaTablesBldr.append(",");
             }
-            schemaTablesBldr.append(column + " TEXT");
+            //hack, should use map that defines column types eventually
+            if (column.equals("latitude") || column.equals("longitude")) {
+                schemaTablesBldr.append(column + " FLOAT");
+            } else {
+                schemaTablesBldr.append(column + " TEXT");
+            }
             i++;
         }
 
@@ -153,6 +158,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         return mapCursorRespToMap(cursor);
 
+    }
+
+    public Collection<Map<String, String>> geoSearch(double currentLongitude, double currentLatitude, double radius) {
+
+        double minLat = currentLongitude - radius;
+        double maxLat = currentLatitude + radius;
+        double minLong = currentLongitude - radius;
+        double maxLong = currentLongitude + radius;
+
+        Collection<Map<String, String>> responses = new ArrayList<Map<String, String>>();
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(TABLE_NAME, schema, "latitude > " + minLat + " AND " + " latitude < " + maxLat
+                + " AND longitude > " + minLong + " AND longitude < " + maxLong, null, null, null, null);
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
+                responses.add(mapCursorRespToMap(cursor));
+            }
+        }
+
+        return responses;
     }
 
     public Collection<Map<String, String>> findByField(String fieldName, String value) {
