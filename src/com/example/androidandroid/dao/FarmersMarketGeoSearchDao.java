@@ -171,7 +171,7 @@ public class FarmersMarketGeoSearchDao {
 
         if (latLong != null) {
             //we were able to figure out location from user input so can do a search with this
-            responses = farmersMarketsDatabaseHandler.geoSearch(latLong[0], latLong[1], 1.0);
+            responses = farmersMarketsDatabaseHandler.geoSearch(latLong[0], latLong[1], .1);
         }
 
         return responses;

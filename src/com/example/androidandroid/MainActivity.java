@@ -34,17 +34,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        // Find the ListView resource.
-        mainListView = (ListView) findViewById(R.id.listView);
-
-        String[] planets = new String[]{"Mercury", "Venus", "Earth", "Mars",
-                "Jupiter", "Saturn", "Uranus", "Neptune"};
-
-        ArrayList<String> planetList = new ArrayList<String>();
-        planetList.addAll(Arrays.asList(planets));
-
-        // Create ArrayAdapter using the planet list.
-        listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, planetList);
+      //  mainListView = (ListView) findViewById(R.id.listView);
 
 /*        try {
 
@@ -61,10 +51,7 @@ public class MainActivity extends Activity {
         }*/
 
 
-        // Set the ArrayAdapter as the ListView's adapter.
-        //  mainListView.setAdapter(listAdapter);
-
-        mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+/*        mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
@@ -72,21 +59,21 @@ public class MainActivity extends Activity {
                 Intent i = new Intent(getApplicationContext(), Draw.class);
                 startActivity(i);
 
-           /*     String item = ((TextView) view).getText().toString();
+           *//*     String item = ((TextView) view).getText().toString();
 
                Toast toast = Toast.makeText(getBaseContext(), item, 50);
                 toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-                toast.show();*/
+                toast.show();*//*
 
-       /*         Toast toast = new Toast(getBaseContext());
+       *//*         Toast toast = new Toast(getBaseContext());
 
                 toast.setDuration(Toast.LENGTH_LONG);
                        toast.setText(item);
                 //  toast.setView(layout);
-                toast.show();*/
+                toast.show();*//*
 
             }
-        });
+        });*/
 
 
     }
