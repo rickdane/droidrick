@@ -20,11 +20,11 @@ public class DataLoader {
 
     public static void test(InputStream inputStream, final DatabaseHandler dbHandler) {
 
-        //     reloadDbFromScratchHelper(inputStream, dbHandler, ZipcodesDatabaseHandler.getSchema());
+        // reloadDbFromScratchHelper(inputStream, dbHandler, ZipcodesDatabaseHandler.getSchema());
 
         // Collection<Map<String, String>> responses = dbHandler.geoSearch(-76.1354, 36.8419, 1);
 
-        Collection<Map<String, String>> responses = dbHandler.findByField("city", "VACAVILLE");
+        Collection<Map<String, String>> responses = dbHandler.findByField("city", "ATLANTA");
 
         responses = null;
     }

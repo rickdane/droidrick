@@ -134,11 +134,26 @@ public abstract class DatabaseHandler extends SQLiteOpenHelper {
         return responses;
     }
 
+    public Map<String, String> findOneByField(String fieldName, String value) {
+        Map<String, String> map = new HashMap<String, String>();
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(TABLE_NAME, schema, fieldName + " = '" + value + "'", null, null, null, null);
+        if (cursor != null) {
+            cursor.moveToFirst();
+            while (cursor.moveToNext()) {
+                map = mapCursorRespToMap(cursor);
+            }
+        }
+
+        return map;
+    }
+
     public Collection<Map<String, String>> findByField(String fieldName, String value) {
         Collection<Map<String, String>> responses = new ArrayList<Map<String, String>>();
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursor = db.query(TABLE_NAME, schema, fieldName + "=" + value, null, null, null, null);
+        Cursor cursor = db.query(TABLE_NAME, schema, fieldName + " = '" + value + "'", null, null, null, null);
         if (cursor != null) {
             while (cursor.moveToNext()) {
                 responses.add(mapCursorRespToMap(cursor));
