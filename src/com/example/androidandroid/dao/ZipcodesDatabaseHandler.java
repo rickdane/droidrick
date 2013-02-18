@@ -50,7 +50,7 @@ public class ZipcodesDatabaseHandler extends DatabaseHandler {
 
 
     public ZipcodesDatabaseHandler(Context context) {
-        super(schema, context, DATABASE_NAME, null, DATABASE_VERSION);
+        super(schema, TABLE_NAME, context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
 }

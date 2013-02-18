@@ -18,16 +18,6 @@ import java.util.Map;
  */
 public class DataLoader {
 
-    public static void test(InputStream inputStream, final DatabaseHandler dbHandler) {
-
-        // reloadDbFromScratchHelper(inputStream, dbHandler, ZipcodesDatabaseHandler.getSchema());
-
-        // Collection<Map<String, String>> responses = dbHandler.geoSearch(-76.1354, 36.8419, 1);
-
-        Collection<Map<String, String>> responses = dbHandler.findByField("city", "ATLANTA");
-
-        responses = null;
-    }
 
     /**
      * create and load db table
@@ -35,7 +25,7 @@ public class DataLoader {
      * @param inputStream
      * @param dbHandler
      */
-    protected static void reloadDbFromScratchHelper(InputStream inputStream, final DatabaseHandler dbHandler, final String[] schema) {
+    public void reloadDbFromScratchHelper(InputStream inputStream, final DatabaseHandler dbHandler, final String[] schema) {
         //   dbHandler.truncate();
         dbHandler.onUpgrade(null, 1, 2);
 
@@ -49,6 +39,12 @@ public class DataLoader {
                         if (schema.length > i) {
                             String key = schema[i];
                             if (key != null) {
+                                //hack for zip codes that begin with zero (TODO fix within csv file)
+                                if (key.equals("zipcode") && column.length() < 5) {
+                                    while (column.length() < 5) {
+                                        column = "0" + column;
+                                    }
+                                }
                                 entry.put(key, column);
                             }
                         }

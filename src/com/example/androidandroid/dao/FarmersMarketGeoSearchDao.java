@@ -23,6 +23,11 @@ public class FarmersMarketGeoSearchDao {
 
     private static Map<String, String> states;
 
+    public FarmersMarketGeoSearchDao(Context context) {
+        farmersMarketsDatabaseHandler = new FarmersMarketsDatabaseHandler(context);
+        zipcodesDatabaseHandler = new ZipcodesDatabaseHandler(context);
+    }
+
     static {
         states = new HashMap<String, String>();
         states.put("Alabama", "AL");
@@ -98,10 +103,6 @@ public class FarmersMarketGeoSearchDao {
         states.put("Yukon Territory", "YT");
     }
 
-    public void init(Context context) {
-        farmersMarketsDatabaseHandler = new FarmersMarketsDatabaseHandler(context);
-        zipcodesDatabaseHandler = new ZipcodesDatabaseHandler(context);
-    }
 
     /**
      * Logic to attempt to get location based on  user input such as city and state or zip

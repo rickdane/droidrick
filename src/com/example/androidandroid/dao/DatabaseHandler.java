@@ -24,14 +24,16 @@ public abstract class DatabaseHandler extends SQLiteOpenHelper {
     // Contacts Table Columns names
     private static final String KEY_ID = "id";
 
+    private String DATABASE_NAME;
     private String TABLE_NAME;
 
     protected String[] schema;
 
 
-    public DatabaseHandler(String[] schema, android.content.Context context, java.lang.String name, android.database.sqlite.SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, null, version);
-        TABLE_NAME = name;
+    public DatabaseHandler(String[] schema, String tableName, android.content.Context context, java.lang.String dbName, android.database.sqlite.SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, dbName, null, version);
+        DATABASE_NAME = dbName;
+        TABLE_NAME = tableName;
         this.schema = schema;
     }
 
@@ -113,7 +115,7 @@ public abstract class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
-    public Collection<Map<String, String>> geoSearch(double currentLongitude, double currentLatitude, double radius) {
+    public Collection<Map<String, String>> geoSearch(double currentLatitude, double currentLongitude, double radius) {
 
         double minLat = currentLongitude - radius;
         double maxLat = currentLatitude + radius;
@@ -141,9 +143,8 @@ public abstract class DatabaseHandler extends SQLiteOpenHelper {
         Cursor cursor = db.query(TABLE_NAME, schema, fieldName + " = '" + value + "'", null, null, null, null);
         if (cursor != null) {
             cursor.moveToFirst();
-            while (cursor.moveToNext()) {
-                map = mapCursorRespToMap(cursor);
-            }
+
+            map = mapCursorRespToMap(cursor);
         }
 
         return map;

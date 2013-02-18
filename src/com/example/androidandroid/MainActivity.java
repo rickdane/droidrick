@@ -48,21 +48,17 @@ public class MainActivity extends Activity {
 
 /*        try {
 
-          //  DatabaseHandler dbHandler   = new FarmersMarketsDatabaseHandler(getBaseContext());
-            DatabaseHandler dbHandler   = new ZipcodesDatabaseHandler(getBaseContext());
+            //    DatabaseHandler dbHandler   = new FarmersMarketsDatabaseHandler(getBaseContext());
+            DatabaseHandler dbHandler = new ZipcodesDatabaseHandler(getBaseContext());
 
-            String assetName = "zip_codes_city_state_data.csv";              //farmers_market.csv
+            String assetName = "zip_codes_city_state_data.csv";              //farmers_market.csv   //zip_codes_city_state_data
 
             InputStream inputStream = getAssets().open(assetName);
-            DataLoader.test(inputStream, dbHandler);
+            DataLoader dbLoader = new DataLoader();
+            dbLoader.reloadDbFromScratchHelper(inputStream, dbHandler, ZipcodesDatabaseHandler.getSchema());
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-
-        //load search activity
-     //  Intent i = new Intent(getApplicationContext(), SearchActivity.class);
-      //  startActivity(i);
-        // onSearchRequested();
 
 
         // Set the ArrayAdapter as the ListView's adapter.
