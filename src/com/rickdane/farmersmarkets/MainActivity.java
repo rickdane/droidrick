@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.widget.*;
 import com.rickdane.farmersmarkets.dao.DatabaseHandler;
 import com.rickdane.farmersmarkets.dao.DbUtils;
+import com.rickdane.farmersmarkets.dao.FarmersMarketsDatabaseHandler;
 import com.rickdane.farmersmarkets.dao.ZipcodesDatabaseHandler;
 import com.rickdane.farmersmarkets.dataprocessing.DataLoader;
 
@@ -41,21 +42,23 @@ public class MainActivity extends Activity {
         }*/
 
 
-        try {
+        //to load database from csv file
+/*        try {
 
-            //    DatabaseHandler dbHandler   = new FarmersMarketsDatabaseHandler(getBaseContext());
-            DatabaseHandler dbHandler = new ZipcodesDatabaseHandler(getBaseContext());
+                DatabaseHandler dbHandler   = new FarmersMarketsDatabaseHandler(getBaseContext());
+          //  DatabaseHandler dbHandler = new ZipcodesDatabaseHandler(getBaseContext());
 
-            String assetName = "zip_codes_city_state_data.csv";              //farmers_market.csv   //zip_codes_city_state_data
+            String assetName = "farmers_market.csv";              //farmers_market.csv   //zip_codes_city_state_data
 
             InputStream inputStream = getAssets().open(assetName);
             DataLoader dbLoader = new DataLoader();
-            dbLoader.reloadDbFromScratchHelper(inputStream, dbHandler, ZipcodesDatabaseHandler.getSchema());
+            dbLoader.reloadDbFromScratchHelper(inputStream, dbHandler, FarmersMarketsDatabaseHandler.getSchema());
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("finished");*/
 
-        System.out.println("finished");
+
 /*        mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
