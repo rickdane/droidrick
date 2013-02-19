@@ -34,12 +34,13 @@ public class MainActivity extends Activity {
 
         //  mainListView = (ListView) findViewById(R.id.listView);
 
-        //load db, if needed, as we are using pre-loaded db
-/*        try {
-            DbUtils.createDatabaseIfNotExists(getApplicationContext());
+        //load databases, if needed, as we are using pre-loaded databases
+        try {
+            DbUtils.createDatabaseIfNotExists(getApplicationContext(), "farmersMarkets.db");
+            DbUtils.createDatabaseIfNotExists(getApplicationContext(), "zipcodecitystate.db");
         } catch (Exception e) {
             Log.w("--Exception trying to create DB", e);
-        }*/
+        }
 
 
         //to load database from csv file

@@ -14,13 +14,12 @@ import java.io.*;
  */
 public class DbUtils {
     private static final String DB_PATH = "/data/data/com.rickdane.farmersmarkets/databases/";
-    private static final String DB_NAME = "zipcodecitystate.db";
 
-    public static void createDatabaseIfNotExists(Context context) throws IOException {
+    public static void createDatabaseIfNotExists(Context context, String dbName) throws IOException {
         boolean createDb = false;
 
         File dbDir = new File(DB_PATH);
-        File dbFile = new File(DB_PATH + DB_NAME);
+        File dbFile = new File(DB_PATH + dbName);
         if (!dbDir.exists()) {
             dbDir.mkdir();
             createDb = true;
@@ -44,7 +43,7 @@ public class DbUtils {
 
         if (createDb) {
             // Open your local db as the input stream
-            InputStream myInput = context.getAssets().open(DB_NAME);
+            InputStream myInput = context.getAssets().open(dbName);
 
             // Open the empty db as the output stream
             OutputStream myOutput = new FileOutputStream(dbFile);
@@ -63,7 +62,7 @@ public class DbUtils {
         }
     }
 
-    public static SQLiteDatabase getStaticDb() {
-        return SQLiteDatabase.openDatabase(DB_PATH + DB_NAME, null, SQLiteDatabase.OPEN_READONLY);
+    public static SQLiteDatabase getStaticDb(String dbName) {
+        return SQLiteDatabase.openDatabase(DB_PATH + dbName, null, SQLiteDatabase.OPEN_READONLY);
     }
 }
