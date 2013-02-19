@@ -112,6 +112,8 @@ public class FarmersMarketGeoSearchDao {
      */
     public Collection<Map<String, String>> searchByCityStateorZipInput(String input) {
 
+
+
         Collection<Map<String, String>> responses = new ArrayList<Map<String, String>>();
 
         input = input.toUpperCase().trim();

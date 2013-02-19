@@ -116,7 +116,7 @@ public abstract class DatabaseHandler extends SQLiteOpenHelper {
 
     public Collection<Map<String, String>> geoSearch(double currentLatitude, double currentLongitude, double radius) {
 
-        double minLat = currentLongitude - radius;
+        double minLat = currentLatitude - radius;
         double maxLat = currentLatitude + radius;
         double minLong = currentLongitude - radius;
         double maxLong = currentLongitude + radius;

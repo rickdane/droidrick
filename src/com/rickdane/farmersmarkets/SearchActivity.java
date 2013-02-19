@@ -71,8 +71,10 @@ public class SearchActivity extends ListActivity {
 
             Collection<Map<String, String>> responses = searchDao.searchByCityStateorZipInput(query);
 
+
+
             // Create ArrayAdapter using the planet list.
-            listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, prepareDisplayFromResults(responses));
+            //    listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, prepareDisplayFromResults(responses));
 
 
             setContentView(R.layout.main);
@@ -80,15 +82,8 @@ public class SearchActivity extends ListActivity {
             mainTextView = (TextView) findViewById(R.id.textView);
             mainTextView.setText("Showing Farmer's Markets near " + query + ":");
 
-            //custom adapter
-            Item[] items = new Item[1];
-            Item item = new Item();
-            item.setLabel("a label");
-            item.setUrl("http://");
-            items[0] = item;
-
             mainListView = getListView();
-            this.adapter = new ItemsAdapter(this, R.layout.item_layout, items);
+            this.adapter = new ItemsAdapter(this, R.layout.item_layout, prepareDisplayFromResults(responses));
             mainListView.setAdapter(adapter);
 
    /*
@@ -98,8 +93,8 @@ public class SearchActivity extends ListActivity {
     }
 
     //TODO figure out where to put this, probably doesn't belong here
-    protected List<String> prepareDisplayFromResults(Collection<Map<String, String>> responses) {
-        List<String> displayList = new ArrayList<String>();
+    protected List<Item> prepareDisplayFromResults(Collection<Map<String, String>> responses) {
+        List<Item> displayList = new ArrayList<Item>();
 
         for (Map<String, String> map : responses) {
             StringBuilder title = new StringBuilder().
@@ -108,7 +103,9 @@ public class SearchActivity extends ListActivity {
                     append(map.get("city")).
                     append(", ").
                     append(map.get("state"));
-            displayList.add(title.toString());
+            Item item = new Item();
+            item.setLabel(title.toString());
+            displayList.add(item);
         }
 
         return displayList;
@@ -116,9 +113,9 @@ public class SearchActivity extends ListActivity {
 
     private class ItemsAdapter extends ArrayAdapter<Item> {
 
-        private Item[] items;
+        private List<Item> items;
 
-        public ItemsAdapter(Context context, int textViewResourceId, Item[] items) {
+        public ItemsAdapter(Context context, int textViewResourceId, List<Item> items) {
             super(context, textViewResourceId, items);
             this.items = items;
         }
@@ -132,7 +129,7 @@ public class SearchActivity extends ListActivity {
                 view = vi.inflate(R.layout.item_layout, null);
             }
 
-            Item it = items[position];
+            Item it = items.get(position);
             TextView textView = (TextView) view.findViewById(R.id.data_item);
 
             if (it != null) {

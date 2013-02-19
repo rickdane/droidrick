@@ -35,10 +35,10 @@
     <file path="/ViewContainer.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361056626651" ignored="false" />
     <file path="/DataLoader.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361171973158" ignored="false" />
     <file path="/DatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361169795598" ignored="false" />
-    <file path="/fragment.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361247092714" ignored="false" />
+    <file path="/fragment.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361260082804" ignored="false" />
     <file path="/ZipcodesDatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361169612551" ignored="false" />
-    <file path="/FarmersMarketGeoSearchDao.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361177266046" ignored="false" />
-    <file path="/SearchActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361184375090" ignored="false" />
+    <file path="/FarmersMarketGeoSearchDao.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361261076279" ignored="false" />
+    <file path="/SearchActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361258758899" ignored="false" />
     <file path="/MainActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361255879291" ignored="false" />
     <file path="/options_menu.xml" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361164155086" ignored="false" />
     <file path="/FarmersMarketsDatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361169208062" ignored="false" />
@@ -61,62 +61,6 @@
   <component name="DebuggerManager">
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/SearchActivity.java" line="0" class="SearchActivity.java" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/SearchActivity.java" line="154" class="com.rickdane.farmersmarkets.SearchActivity" package="com.rickdane.farmersmarkets">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketGeoSearchDao.java" line="120" class="com.rickdane.farmersmarkets.dao.FarmersMarketGeoSearchDao" package="com.rickdane.farmersmarkets.dao">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/MainActivity.java" line="41" class="com.rickdane.farmersmarkets.MainActivity" package="com.rickdane.farmersmarkets">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/MainActivity.java" line="39" class="com.rickdane.farmersmarkets.MainActivity" package="com.rickdane.farmersmarkets">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -184,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="54" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.54404145">
+            <state line="39" column="132" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -196,9 +140,72 @@
       <file leaf-file-name="DbUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DbUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="43" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.0">
+            <state line="17" column="23" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FarmersMarketGeoSearchDao.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketGeoSearchDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="58" selection-start="4171" selection-end="4171" vertical-scroll-proportion="0.5607064">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4043#4064#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FarmersMarketsDatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketsDatabaseHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="66" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZipcodesDatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/ZipcodesDatabaseHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="53" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DatabaseHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="130" column="0" selection-start="4162" selection-end="4162" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4404#4420#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="farmers_market.csv" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/farmers_market.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1873" column="120" selection-start="473896" selection-end="473896" vertical-scroll-proportion="-10.96">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/SearchActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="167" column="125" selection-start="5091" selection-end="5091" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2947#2953#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -208,24 +215,6 @@
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="83" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="local.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scope_settings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -241,9 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/androidandroid/dao/FarmersMarketsDatabaseHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/example/androidandroid/dao/ZipcodesDatabaseHandler.java" />
         <option value="$PROJECT_DIR$/src/com/example/androidandroid/dataprocessing/DataLoader.java" />
         <option value="$PROJECT_DIR$/src/com/example/androidandroid/dao/DatabaseHandler.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
@@ -254,9 +240,12 @@
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/example/androidandroid/SearchActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/farmersmarkets/SearchActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/SearchActivity.java" />
         <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DbUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DatabaseHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/SearchActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketsDatabaseHandler.java" />
         <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketGeoSearchDao.java" />
       </list>
     </option>
   </component>
@@ -685,7 +674,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983211" sideWeight="0.5284016" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45574635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.339498" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -698,7 +687,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26294553" sideWeight="0.54425365" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26294553" sideWeight="0.66050196" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48595506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840833" sideWeight="0.677675" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -769,61 +758,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketGeoSearchDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="21" selection-start="5822" selection-end="5822" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4041#4062#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/SearchActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3121#3129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketsDatabaseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -873,19 +807,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/farmers_market.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1873" column="120" selection-start="473896" selection-end="473896" vertical-scroll-proportion="-10.96">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DbUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="43" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.0">
+        <state line="17" column="23" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/ZipcodesDatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="53" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="54" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.54404145">
+        <state line="39" column="132" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/SearchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="125" selection-start="5091" selection-end="5091" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2947#2953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="0" selection-start="4162" selection-end="4162" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4404#4420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketsDatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="66" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketGeoSearchDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="58" selection-start="4171" selection-end="4171" vertical-scroll-proportion="0.5607064">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4043#4064#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

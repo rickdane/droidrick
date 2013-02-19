@@ -16,7 +16,7 @@ public class FarmersMarketsDatabaseHandler extends DatabaseHandler {
     private static final int DATABASE_VERSION = 1;
 
     // Database Name
-    private static final String DATABASE_NAME = "farmersMarkets";
+    private static final String DATABASE_NAME = "farmersMarkets.db";
 
     // Contacts table name
     private static final String TABLE_NAME = "markets";
