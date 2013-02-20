@@ -71,13 +71,11 @@ public class SearchActivity extends ListActivity {
 
             Collection<Map<String, String>> responses = searchDao.searchByCityStateorZipInput(query);
 
-
-
-            // Create ArrayAdapter using the planet list.
-            //    listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, prepareDisplayFromResults(responses));
-
-
             setContentView(R.layout.main);
+
+            //hide the intro text
+            View introText = (View) findViewById(R.id.intro_text);
+            introText.setVisibility(View.INVISIBLE);
 
             mainTextView = (TextView) findViewById(R.id.textView);
             mainTextView.setText("Showing Farmer's Markets near " + query + ":");
@@ -85,9 +83,6 @@ public class SearchActivity extends ListActivity {
             mainListView = getListView();
             this.adapter = new ItemsAdapter(this, R.layout.item_layout, prepareDisplayFromResults(responses));
             mainListView.setAdapter(adapter);
-
-   /*
-            mainListView.setAdapter(listAdapter);*/
 
         }
     }

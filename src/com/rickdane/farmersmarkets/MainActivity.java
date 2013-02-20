@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
 import android.widget.*;
 import com.rickdane.farmersmarkets.dao.DatabaseHandler;
 import com.rickdane.farmersmarkets.dao.DbUtils;
@@ -22,7 +23,6 @@ import java.io.InputStream;
 public class MainActivity extends Activity {
 
     private ArrayAdapter<String> listAdapter;
-    private ListView mainListView;
 
     /**
      * Called when the activity is first created.
@@ -32,7 +32,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        //  mainListView = (ListView) findViewById(R.id.listView);
+        View introText = (View) findViewById(R.id.intro_text);
+        introText.setVisibility(View.VISIBLE);
+
 
         //load databases, if needed, as we are using pre-loaded databases
         try {

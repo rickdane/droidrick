@@ -10,9 +10,22 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView" android:text="Find Farmer's Markets Nearby"/>
 
-    <ListView android:id="@android:id/list"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent" android:background="@drawable/farmers_market_bg"/>
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="@drawable/farmers_market_bg">
+        <ListView android:id="@android:id/list"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent" android:background="@drawable/farmers_market_bg"/>
+        <TextView
+                android:layout_width="257dp"
+                android:layout_height="67dp"
+                android:text="Search for farmers markets using the search above"
+                android:id="@+id/intro_text" android:layout_gravity="center_horizontal|top"
+                android:textColor="#b5c5a0" android:background="@drawable/rounded_edges"
+                android:layout_marginTop="45dp" android:paddingTop="10dp" android:paddingLeft="10dp"/>
+
+    </FrameLayout>
+
 
 </LinearLayout>
 
