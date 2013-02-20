@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">androidandroid</string>
+    <string name="app_name">Farmers Markets</string>
     <string name="search_label">Search</string>
-    <string name="search_hint">Search by location</string>
+    <string name="search_hint">Enter Zip</string>
 </resources>
