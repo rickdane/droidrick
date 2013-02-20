@@ -27,24 +27,25 @@
     <list default="true" id="d0abb1e4-94a4-4592-a940-346e3a66e9b2" name="Default" comment="" />
     <ignored path="androidandroid.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/MyActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361126307907" ignored="false" />
-    <file path="/Dummy.txt" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361184043305" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361165464204" ignored="false" />
-    <file path="/DrawView.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361057270938" ignored="false" />
-    <file path="/Draw.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361055668986" ignored="false" />
-    <file path="/ViewContainer.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361056626651" ignored="false" />
-    <file path="/DataLoader.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361171973158" ignored="false" />
-    <file path="/DatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361169795598" ignored="false" />
-    <file path="/fragment.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361260082804" ignored="false" />
-    <file path="/ZipcodesDatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361169612551" ignored="false" />
-    <file path="/FarmersMarketGeoSearchDao.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361261076279" ignored="false" />
-    <file path="/SearchActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361258758899" ignored="false" />
-    <file path="/MainActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361255879291" ignored="false" />
-    <file path="/options_menu.xml" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361164155086" ignored="false" />
-    <file path="/FarmersMarketsDatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361169208062" ignored="false" />
-    <file path="/strings.xml" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361176445071" ignored="false" />
-    <file path="$PROJECT_DIR$/src/com/example/farmersmarkets/dataprocessing/DataLoader.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361237896019" ignored="false" />
     <file path="/DbUtils.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361255825250" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/example/farmersmarkets/dataprocessing/DataLoader.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361237896019" ignored="false" />
+    <file path="/strings.xml" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361176445071" ignored="false" />
+    <file path="/FarmersMarketsDatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361169208062" ignored="false" />
+    <file path="/options_menu.xml" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361164155086" ignored="false" />
+    <file path="/MainActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361255879291" ignored="false" />
+    <file path="/SearchActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361258758899" ignored="false" />
+    <file path="/FarmersMarketGeoSearchDao.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361261076279" ignored="false" />
+    <file path="/ZipcodesDatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361169612551" ignored="false" />
+    <file path="/fragment.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361260082804" ignored="false" />
+    <file path="/DatabaseHandler.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361169795598" ignored="false" />
+    <file path="/DataLoader.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361171973158" ignored="false" />
+    <file path="/ViewContainer.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361056626651" ignored="false" />
+    <file path="/Draw.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361055668986" ignored="false" />
+    <file path="/DrawView.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361057270938" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361329110989" ignored="false" />
+    <file path="/Dummy.txt" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361184043305" ignored="false" />
+    <file path="/MyActivity.java" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361126307907" ignored="false" />
+    <file path="/a.dummy" changelist="d0abb1e4-94a4-4592-a940-346e3a66e9b2" time="1361329102672" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,22 +120,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FarmersMarketGeoSearchDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketGeoSearchDao.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4041#4062#0" expanded="true" />
-              </folding>
+            <state line="14" column="21" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="45" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+            <state line="39" column="132" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,7 +141,7 @@
       <file leaf-file-name="main.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
           <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,7 +166,6 @@
         <option value="$PROJECT_DIR$/res/layout/list_item.xml" />
         <option value="$PROJECT_DIR$/src/com/example/androidandroid/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/item_layout.xml" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/example/androidandroid/SearchActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/farmersmarkets/SearchActivity.java" />
         <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DbUtils.java" />
@@ -178,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketGeoSearchDao.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
       </list>
     </option>
   </component>
@@ -216,6 +214,20 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="androidandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="androidandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -332,6 +344,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="androidandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="androidandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="androidandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="androidandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -374,21 +418,23 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
@@ -397,11 +443,13 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/assets/database" />
       <recent name="$PROJECT_DIR$/res/drawable" />
-      <recent name="$PROJECT_DIR$/src/com/example/androidandroid" />
+      <recent name="$PROJECT_DIR$/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/res/drawable-ldpi" />
+      <recent name="$PROJECT_DIR$/res/drawable-mdpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/drawable" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/src/com/example/androidandroid/dataprocessing" />
     </key>
@@ -577,11 +625,6 @@
       <item index="0" class="java.lang.String" itemvalue="Android Application.farmersmarkets" />
       <item index="1" class="java.lang.String" itemvalue="Application.FarmersMarketGeoSearchDao" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.FarmersMarketGeoSearchDao" />
-      </list>
-    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -618,33 +661,34 @@
     <frame x="64" y="-4" width="1537" height="905" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32817754" sideWeight="0.66050196" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3234701" sideWeight="0.66050196" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32817754" sideWeight="0.67107004" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3234701" sideWeight="0.67107004" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.289456" sideWeight="0.4966975" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983211" sideWeight="0.5284016" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.339498" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33819628" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26294553" sideWeight="0.66050196" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26294553" sideWeight="0.67107004" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48595506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.289456" sideWeight="0.4966975" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -708,67 +752,51 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ant.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proguard-project.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dataprocessing/DataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/farmers_market.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1873" column="120" selection-start="473896" selection-end="473896" vertical-scroll-proportion="-10.96">
-          <folding />
-        </state>
+        <state line="1873" column="120" selection-start="473896" selection-end="473896" vertical-scroll-proportion="-10.96" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DbUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="17" column="23" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/ZipcodesDatabaseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="53" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+        <state line="15" column="53" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/SearchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="125" selection-start="5091" selection-end="5091" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="0" selection-start="4162" selection-end="4162" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketsDatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="66" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketGeoSearchDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="21" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -776,50 +804,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="132" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/SearchActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="125" selection-start="5091" selection-end="5091" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2947#2953#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/DatabaseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="0" selection-start="4162" selection-end="4162" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4404#4420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketsDatabaseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="66" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/rickdane/farmersmarkets/dao/FarmersMarketGeoSearchDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4041#4062#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="45" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -834,6 +818,81 @@
         <state />
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android (androidandroid)|Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android 4.2 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>androidandroid</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

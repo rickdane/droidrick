@@ -10,6 +10,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView" android:text="Find Farmer's Markets Nearby"/>
 
+    <ImageView
+            android:layout_width="322dp"
+            android:layout_height="267dp"
+            android:id="@+id/imageView" android:layout_gravity="center"
+            android:background="@drawable/farmers_market_bg"/>
     <ListView android:id="@android:id/list"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"/>
