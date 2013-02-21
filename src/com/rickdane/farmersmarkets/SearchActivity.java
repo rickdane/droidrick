@@ -5,14 +5,13 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.*;
 import android.widget.*;
 import com.rickdane.farmersmarkets.dao.FarmersMarketGeoSearchDao;
+import org.stringtemplate.v4.ST;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,7 +26,7 @@ public class SearchActivity extends ListActivity {
     private ArrayAdapter<String> listAdapter;
     private ItemsAdapter adapter;
     private ListView mainListView;
-    private TextView mainTextView;
+    private TextView banner;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,30 +65,42 @@ public class SearchActivity extends ListActivity {
     private void handleIntent(Intent intent) {
 
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
+
             String query = intent.getStringExtra(SearchManager.QUERY);
-
-
             Collection<Map<String, String>> responses = searchDao.searchByCityStateorZipInput(query);
 
             setContentView(R.layout.main);
-
-            //hide the intro text
-            View introText = (View) findViewById(R.id.intro_text);
-            introText.setVisibility(View.INVISIBLE);
-
-            mainTextView = (TextView) findViewById(R.id.textView);
-            mainTextView.setText("Showing Farmer's Markets near " + query + ":");
-
             mainListView = getListView();
-            this.adapter = new ItemsAdapter(this, R.layout.item_layout, prepareDisplayFromResults(responses));
-            mainListView.setAdapter(adapter);
+            mainListView.setVisibility(View.VISIBLE);
 
+
+            if (!responses.isEmpty()) {
+
+                //hide the intro text
+                View introText = (View) findViewById(R.id.intro_text);
+                introText.setVisibility(View.INVISIBLE);
+                View itemDisplay = (View) findViewById(R.id.item_display);
+                itemDisplay.setVisibility(View.INVISIBLE);
+
+                banner = (TextView) findViewById(R.id.banner);
+                banner.setText("Showing Farmer's Markets near " + query + ":");
+                banner.setVisibility(View.VISIBLE);
+
+                this.adapter = new ItemsAdapter(this, R.layout.item_layout, prepareDisplayFromResults(responses));
+                mainListView.setAdapter(adapter);
+            } else {
+
+                Toast toast = Toast.makeText(getBaseContext(), "", Toast.LENGTH_LONG);
+                toast.setText("Sorry, no results found for that location");
+                toast.setGravity(Gravity.TOP | Gravity.LEFT, 20, 65);
+                toast.show();
+            }
         }
     }
 
     //TODO figure out where to put this, probably doesn't belong here
-    protected List<Item> prepareDisplayFromResults(Collection<Map<String, String>> responses) {
-        List<Item> displayList = new ArrayList<Item>();
+    protected List<Map<String, String>> prepareDisplayFromResults(Collection<Map<String, String>> responses) {
+        List<Map<String, String>> displayList = new ArrayList<Map<String, String>>();
 
         for (Map<String, String> map : responses) {
             StringBuilder title = new StringBuilder().
@@ -98,19 +109,20 @@ public class SearchActivity extends ListActivity {
                     append(map.get("city")).
                     append(", ").
                     append(map.get("state"));
-            Item item = new Item();
-            item.setLabel(title.toString());
+            Map<String, String> item = new HashMap<String, String>();
+            item.put("list_title", title.toString());
+            item.putAll(map);
             displayList.add(item);
         }
 
         return displayList;
     }
 
-    private class ItemsAdapter extends ArrayAdapter<Item> {
+    private class ItemsAdapter extends ArrayAdapter<Map<String, String>> {
 
-        private List<Item> items;
+        private List<Map<String, String>> items;
 
-        public ItemsAdapter(Context context, int textViewResourceId, List<Item> items) {
+        public ItemsAdapter(Context context, int textViewResourceId, List<Map<String, String>> items) {
             super(context, textViewResourceId, items);
             this.items = items;
         }
@@ -124,13 +136,14 @@ public class SearchActivity extends ListActivity {
                 view = vi.inflate(R.layout.item_layout, null);
             }
 
-            Item it = items.get(position);
+            Map<String, String> it = items.get(position);
             TextView textView = (TextView) view.findViewById(R.id.data_item);
 
             if (it != null) {
-                textView.setText(it.getLabel());
+                textView.setText(it.get("list_title"));
             }
 
+            //this
 /*            if (it != null) {
                 ImageView iv = (ImageView) v.findViewById(R.id.list_item_image);
                 if (iv != null) {
@@ -144,30 +157,37 @@ public class SearchActivity extends ListActivity {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        Item item = this.adapter.getItem(position); //.click(
-        //  this.getApplicationContext();
+        Map<String, String> item = this.adapter.getItem(position); //.click(
+
+        mainListView.setVisibility(View.INVISIBLE);
+        banner.setVisibility(View.INVISIBLE);
+
+        TextView itemDisplay = (TextView) findViewById(R.id.item_display);
+
+        //todo pull from text file instead of having template definition within code
+
+        String website = "";
+        if (item.get("website") != null) {
+            website = "<strong>Website:</strong> <a href='url'>$url$</a><br/><br/>";
+        }
+
+        ST st = new ST("<h2>$name$</h2>" +
+                "<strong>Address:</strong> $address$ <br/><br/>" +
+                "<strong>Location:</strong> $location$ <br/><br/>" +
+                "<strong>Schedule:</strong> $schedule$ <br/><br/>" +
+                website, '$', '$');
+
+        st.add("name", item.get("name")).
+                add("address", item.get("street")).
+                add("schedule", item.get("schedule")).
+                add("url", item.get("website")).
+                add("location", item.get("city") + ", " + item.get("state"));
+
+        itemDisplay.setText(Html.fromHtml(st.render()));
+
+        itemDisplay.setVisibility(View.VISIBLE);
+
+
     }
-
-    private class Item {
-        private String label;
-        private String url;
-
-        public String getLabel() {
-            return label;
-        }
-
-        public void setLabel(String label) {
-            this.label = label;
-        }
-
-        public String getUrl() {
-            return url;
-        }
-
-        public void setUrl(String url) {
-            this.url = url;
-        }
-    }
-
 
 }

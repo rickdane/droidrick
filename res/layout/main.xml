@@ -8,7 +8,7 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView" android:text="Find Farmer's Markets Nearby"/>
+            android:id="@+id/banner" android:text="Find Farmer's Markets Nearby"/>
 
     <FrameLayout
             android:layout_width="fill_parent"
@@ -19,10 +19,17 @@
         <TextView
                 android:layout_width="257dp"
                 android:layout_height="67dp"
-                android:text="Search for farmers markets using the search above"
+                android:text="Search for farmers markets in your area using the search dialog above"
                 android:id="@+id/intro_text" android:layout_gravity="center_horizontal|top"
                 android:textColor="#b5c5a0" android:background="@drawable/rounded_edges"
-                android:layout_marginTop="45dp" android:paddingTop="10dp" android:paddingLeft="10dp"/>
+                android:layout_marginTop="45dp" android:paddingTop="10dp" android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+        <TextView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:id="@+id/item_display" android:layout_gravity="center_horizontal|top"
+                android:background="@drawable/rounded_edges" android:layout_marginTop="45dp"
+                android:visibility="invisible" android:padding="10dp"/>
 
     </FrameLayout>
 

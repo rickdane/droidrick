@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="external_libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/ST-4.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
