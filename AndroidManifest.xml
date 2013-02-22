@@ -25,7 +25,6 @@
                     android:value=".SearchActivity" />
 
         </activity>
-        <activity android:name=".Second" android:label="second"/>
         <activity android:name=".Draw" android:label="draw"/>
 
 

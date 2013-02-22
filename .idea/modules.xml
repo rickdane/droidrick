@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/androidandroid.iml" filepath="$PROJECT_DIR$/androidandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/farmersmarketfinder.iml" filepath="$PROJECT_DIR$/farmersmarketfinder.iml" />
     </modules>
   </component>
 </project>
