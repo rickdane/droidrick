@@ -66,7 +66,8 @@ public class DisplayDetailsActivity extends ListActivity {
 
         if (item != null) {
             setContentView(R.layout.main);
-//            banner.setVisibility(View.INVISIBLE);
+            banner = (TextView) findViewById(R.id.banner);
+            banner.setVisibility(View.INVISIBLE);
 
             TextView itemDisplay = (TextView) findViewById(R.id.text_display);
 

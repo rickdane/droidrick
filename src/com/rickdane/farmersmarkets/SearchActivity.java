@@ -6,6 +6,7 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.*;
@@ -29,6 +30,7 @@ public class SearchActivity extends ListActivity {
     private ItemsAdapter adapter;
     private ListView mainListView;
     private TextView banner;
+    boolean changeWeight = false;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,7 +60,7 @@ public class SearchActivity extends ListActivity {
     @Override
     protected void onNewIntent(Intent intent) {
 
-           handleIntent(intent);
+        handleIntent(intent);
     }
 
     private void handleIntent(Intent intent) {
@@ -70,6 +72,7 @@ public class SearchActivity extends ListActivity {
 
             setContentView(R.layout.main);
             mainListView = getListView();
+
 
             if (!responses.isEmpty()) {
 
@@ -161,6 +164,7 @@ public class SearchActivity extends ListActivity {
         startActivity(intent);
 
     }
+
 
 /*    @Override
     public void onDestroy() {

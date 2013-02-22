@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="@drawable/gradient">
+
+
+        <!--            <TextView
+                            android:layout_width="257dp"
+                            android:layout_height="67dp"
+                            android:text="Search for farmers markets in your area using the search dialog above"
+                            android:id="@+id/intro_text" android:layout_gravity="center_horizontal|top"
+                            android:textColor="#b5c5a0" android:background="@drawable/rounded_edges"
+                            android:layout_marginTop="100dp" android:paddingTop="10dp" android:paddingLeft="10dp"
+                            android:paddingRight="10dp"/>-->
+        <!--         <TextView
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:id="@+id/item_display" android:layout_gravity="center_horizontal|top"
+                         android:background="@drawable/rounded_edges" android:layout_marginTop="45dp"
+                         android:visibility="invisible" android:padding="10dp" android:gravity="top"/>-->
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/banner" android:text="Find Farmer's Markets Nearby"
+                    android:layout_weight="2" android:padding="10dp"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/main_display_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_gravity="right|center_vertical"
+                    android:layout_weight="98">
+
+
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:layout_gravity="center_vertical">
+
+                    <ListView android:id="@android:id/list"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:background="@android:color/transparent" android:layout_weight="20"/>
+
+
+                    <Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/space" android:layout_gravity="right|center_vertical"
+                            android:layout_weight="40"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_gravity="center_vertical">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/text_display" android:visibility="visible"
+                            android:background="@drawable/rounded_edges" android:padding="15dp"
+                            android:linksClickable="true"
+                            android:layout_margin="10dp" android:layout_weight="20"/>
+
+                    <Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/space" android:layout_gravity="right|center_vertical"
+                            android:layout_weight="40"/>
+
+                </LinearLayout>
+
+
+                <!--           <ViewStub
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:id="@+id/viewStub" android:layout_gravity="right|center_vertical"
+                                   android:inflatedId="@+id/display_area"
+                                   android:layout_weight="98"
+                                   android:layout="@android:id/list"/>-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
