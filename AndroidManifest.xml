@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".Draw" android:label="draw"/>
 
+        <activity android:name=".DisplayDetailsActivity" android:label="display_details_activity"/>
+
 
     </application>
 </manifest>

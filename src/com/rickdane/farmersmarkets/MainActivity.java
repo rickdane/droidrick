@@ -22,24 +22,24 @@ import java.io.InputStream;
 
 public class MainActivity extends Activity {
 
-  @Override
-  public void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.main);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
 
-    View introText = (View) findViewById(R.id.intro_text);
-    introText.setVisibility(View.VISIBLE);
+/*    View introText = (View) findViewById(R.id.intro_text);
+    introText.setVisibility(View.VISIBLE);*/
 
-    //load databases, if needed, as we are using pre-loaded databases
-    try {
-      DbUtils.createDatabaseIfNotExists(getApplicationContext(), "farmersMarkets.db");
-      DbUtils.createDatabaseIfNotExists(getApplicationContext(), "zipcodecitystate.db");
-    } catch (Exception e) {
-      Log.w("--Exception trying to create DB", e);
-    }
+        //load databases, if needed, as we are using pre-loaded databases
+        try {
+            DbUtils.createDatabaseIfNotExists(getApplicationContext(), "farmersMarkets.db");
+            DbUtils.createDatabaseIfNotExists(getApplicationContext(), "zipcodecitystate.db");
+        } catch (Exception e) {
+            Log.w("--Exception trying to create DB", e);
+        }
 
 
-    //to load database from csv file
+        //to load database from csv file
 /*        try {
 
                 DatabaseHandler dbHandler   = new FarmersMarketsDatabaseHandler(getBaseContext());
@@ -81,43 +81,44 @@ public class MainActivity extends Activity {
         });*/
 
 
-  }
+    }
 
-  @Override
-  public boolean onCreateOptionsMenu(Menu menu) {
-    MenuInflater inflater = getMenuInflater();
-    inflater.inflate(R.menu.options_menu, menu);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.options_menu, menu);
 
-    // Associate searchable configuration with the SearchView
-    SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-    SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
-    searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-    searchView.setIconifiedByDefault(false);
+        // Associate searchable configuration with the SearchView
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setIconifiedByDefault(false);
 
-    return true;
+        return true;
 
-  }
+    }
 
-  @Override
-  public void onDestroy() {
-    finish();
-  }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        finish();
+    }
 
-  @Override
-  public void onUserLeaveHint() {
-    onDestroy();
-  }
+    @Override
+    public void onUserLeaveHint() {
+        onDestroy();
+    }
 
-  @Override
-  public void onBackPressed() {
-    new AlertDialog.Builder(this)
-        .setTitle("Really Exit?")
-        .setMessage("Are you sure you want to exit?")
-        .setNegativeButton(android.R.string.no, null)
-        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-          public void onClick(DialogInterface arg0, int arg1) {
-            onDestroy();
-          }
-        }).create().show();
-  }
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setTitle("Really Exit?")
+                .setMessage("Are you sure you want to exit?")
+                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        onDestroy();
+                    }
+                }).create().show();
+    }
 }
