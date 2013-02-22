@@ -31,7 +31,7 @@ public class DisplayDetailsActivity extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        handleIntent(getIntent());
     }
 
 
@@ -51,11 +51,9 @@ public class DisplayDetailsActivity extends ListActivity {
     }
 
 
-
-
     @Override
     protected void onNewIntent(Intent intent) {
-
+        handleIntent(intent);
     }
 
     private void handleIntent(Intent intent) {
@@ -67,10 +65,10 @@ public class DisplayDetailsActivity extends ListActivity {
         }
 
         if (item != null) {
-            mainListView.setVisibility(View.INVISIBLE);
-            banner.setVisibility(View.INVISIBLE);
+            setContentView(R.layout.main);
+//            banner.setVisibility(View.INVISIBLE);
 
-            // TextView itemDisplay = (TextView) findViewById(R.id.item_display);
+            TextView itemDisplay = (TextView) findViewById(R.id.text_display);
 
             //todo pull from text file instead of having template definition within code
 
@@ -91,9 +89,9 @@ public class DisplayDetailsActivity extends ListActivity {
                     add("url", item.get("website")).
                     add("location", item.get("city") + ", " + item.get("state"));
 
-/*      itemDisplay.setText(Html.fromHtml(st.render()));
+            itemDisplay.setText(Html.fromHtml(st.render()));
+            //  itemDisplay.setVisibility(View.VISIBLE);
 
-      itemDisplay.setVisibility(View.VISIBLE);*/
         } else {
             //TODO figure out else to do, if anything, in case of null item
             finish();
@@ -101,7 +99,7 @@ public class DisplayDetailsActivity extends ListActivity {
 
     }
 
-    @Override
+/*    @Override
     public void onDestroy() {
         super.onDestroy();
         finish();
@@ -110,11 +108,6 @@ public class DisplayDetailsActivity extends ListActivity {
     @Override
     public void onUserLeaveHint() {
         onDestroy();
-    }
-
-    @Override
-    public void onBackPressed() {
-        finish();
-    }
+    }*/
 
 }

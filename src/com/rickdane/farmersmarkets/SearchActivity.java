@@ -70,8 +70,6 @@ public class SearchActivity extends ListActivity {
 
             setContentView(R.layout.main);
             mainListView = getListView();
-            mainListView.setVisibility(View.VISIBLE);
-
 
             if (!responses.isEmpty()) {
 
@@ -161,11 +159,10 @@ public class SearchActivity extends ListActivity {
         Intent intent = new Intent(this, DisplayDetailsActivity.class);
         intent.putExtra("item", item);
         startActivity(intent);
-        finish();
 
     }
 
-    @Override
+/*    @Override
     public void onDestroy() {
         super.onDestroy();
         finish();
@@ -174,12 +171,7 @@ public class SearchActivity extends ListActivity {
     @Override
     public void onUserLeaveHint() {
         onDestroy();
-    }
-
-    @Override
-    public void onBackPressed() {
-        finish();
-    }
+    }*/
 
 
 }

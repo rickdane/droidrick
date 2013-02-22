@@ -27,6 +27,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        TextView itemDisplay = (TextView) findViewById(R.id.text_display);
+        itemDisplay.setVisibility(View.INVISIBLE);
+
 /*    View introText = (View) findViewById(R.id.intro_text);
     introText.setVisibility(View.VISIBLE);*/
 
@@ -98,7 +101,7 @@ public class MainActivity extends Activity {
 
     }
 
-    @Override
+/*    @Override
     public void onDestroy() {
         super.onDestroy();
         finish();
@@ -107,12 +110,12 @@ public class MainActivity extends Activity {
     @Override
     public void onUserLeaveHint() {
         onDestroy();
-    }
+    }*/
 
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
-                .setTitle("Really Exit?")
+                .setTitle("Close Application?")
                 .setMessage("Are you sure you want to exit?")
                 .setNegativeButton(android.R.string.no, null)
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
