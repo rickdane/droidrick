@@ -43,19 +43,50 @@
                     android:layout_height="fill_parent" android:layout_gravity="right|center_vertical"
                     android:layout_weight="98">
 
-                <ListView android:id="@android:id/list"
-                          android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:background="@android:color/transparent"/>
 
 
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:id="@+id/text_display" android:visibility="visible"
-                        android:background="@drawable/rounded_edges" android:padding="15dp"
-                        android:layout_margin="25dp" android:linksClickable="true"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:layout_gravity="center_vertical">
+
+                    <ListView android:id="@android:id/list"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:background="@android:color/transparent" android:layout_weight="20"/>
+
+
+                    <Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/space" android:layout_gravity="right|center_vertical"
+                            android:layout_weight="40"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_gravity="center_vertical">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/text_display" android:visibility="visible"
+                            android:background="@drawable/rounded_edges" android:padding="15dp"
+                            android:linksClickable="true"
+                            android:layout_weight="20" android:layout_margin="10dp"/>
+
+                    <Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/space" android:layout_gravity="right|center_vertical"
+                            android:layout_weight="40"/>
+
+                </LinearLayout>
+
 
                 <!--           <ViewStub
                                    android:layout_width="wrap_content"

@@ -22,12 +22,16 @@
 
             <meta-data
                     android:name="android.app.default_searchable"
-                    android:value=".SearchActivity" />
+                    android:value=".SearchActivity"/>
 
         </activity>
         <activity android:name=".Draw" android:label="draw"/>
 
-        <activity android:name=".DisplayDetailsActivity" android:label="display_details_activity"/>
+        <activity android:name=".DisplayDetailsActivity" android:label="display_details_activity">
+            <meta-data
+                    android:name="android.app.default_searchable"
+                    android:value=".SearchActivity"/>
+        </activity>
 
 
     </application>

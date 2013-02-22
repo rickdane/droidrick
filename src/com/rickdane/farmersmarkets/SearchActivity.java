@@ -58,7 +58,7 @@ public class SearchActivity extends ListActivity {
     @Override
     protected void onNewIntent(Intent intent) {
 
-        //   handleIntent(intent);
+           handleIntent(intent);
     }
 
     private void handleIntent(Intent intent) {
