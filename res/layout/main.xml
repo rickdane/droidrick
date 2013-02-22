@@ -7,10 +7,10 @@
 
 
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="949dp"
+            android:layout_height="627dp"
             android:id="@+id/imageView" android:layout_gravity="right|top"
-            android:background="@drawable/vegetables_bg_large" android:cropToPadding="true"
+            android:background="@drawable/images" android:cropToPadding="true"
             />
 
 

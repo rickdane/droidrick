@@ -22,11 +22,6 @@ import java.io.InputStream;
 
 public class MainActivity extends Activity {
 
-  private ArrayAdapter<String> listAdapter;
-
-  /**
-   * Called when the activity is first created.
-   */
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
