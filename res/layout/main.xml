@@ -31,11 +31,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
 
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/banner" android:text="Find Farmer's Markets Nearby"
-                    android:layout_weight="2" android:padding="10dp"/>
+            <include
+                    android:id="@+id/banner"
+                    layout="@layout/shared_banner"/>
+
             <LinearLayout
                     android:orientation="vertical"
                     android:id="@+id/main_display_area"
@@ -44,17 +43,15 @@
                     android:layout_weight="98">
 
 
-
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content" android:layout_gravity="center_vertical"
                         android:visibility="visible">
 
-                    <ListView android:id="@android:id/list"
-                              android:layout_width="fill_parent"
-                              android:layout_height="wrap_content"
-                              android:background="@android:color/transparent" android:layout_weight="20"/>
+                    <include
+                            android:id="@android:id/list"
+                            layout="@layout/shared_listview"/>
 
 
                 </LinearLayout>
@@ -65,24 +62,15 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" android:layout_gravity="center_vertical">
 
-                    <TextView
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/text_display" android:visibility="invisible"
-                            android:background="@drawable/rounded_edges" android:padding="15dp"
-                            android:linksClickable="true"
-                            android:layout_margin="10dp" android:layout_weight="0"/>
+
+                    <include
+                            android:id="@+id/text_display"
+                            layout="@layout/shared_textview"/>
+
 
                 </LinearLayout>
 
 
-                <!--           <ViewStub
-                                   android:layout_width="wrap_content"
-                                   android:layout_height="wrap_content"
-                                   android:id="@+id/viewStub" android:layout_gravity="right|center_vertical"
-                                   android:inflatedId="@+id/display_area"
-                                   android:layout_weight="98"
-                                   android:layout="@android:id/list"/>-->
             </LinearLayout>
 
 

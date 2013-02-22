@@ -70,6 +70,8 @@ public class DisplayDetailsActivity extends ListActivity {
             banner.setVisibility(View.INVISIBLE);
 
             TextView itemDisplay = (TextView) findViewById(R.id.text_display);
+            //set focus to remove focus from search input, as this was causing some issues with back button functionality that interrupted flow
+            itemDisplay.requestFocus();
 
             //todo pull from text file instead of having template definition within code
 

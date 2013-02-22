@@ -155,8 +155,7 @@ public abstract class DatabaseHandler extends SQLiteOpenHelper {
 
         Cursor cursor = db.query(TABLE_NAME, schema, prepareConditionalQuery(keys), values, null, null, null, null);
 
-        if (cursor != null) {
-            cursor.moveToFirst();
+        if (cursor != null && cursor.moveToFirst()) {
             map = mapCursorRespToMap(cursor);
         }
 

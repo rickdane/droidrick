@@ -73,28 +73,26 @@ public class SearchActivity extends ListActivity {
             setContentView(R.layout.main);
             mainListView = getListView();
 
+            //set focus to remove focus from search input, as this was causing some issues with back button functionality that interrupted flow
+            mainListView.requestFocus();
+
+            banner = (TextView) findViewById(R.id.banner);
 
             if (!responses.isEmpty()) {
 
-                //hide the intro text
-/*        View introText = (View) findViewById(R.id.intro_text);
-        introText.setVisibility(View.INVISIBLE);
-        View itemDisplay = (View) findViewById(R.id.item_display);
-        itemDisplay.setVisibility(View.INVISIBLE);*/
-
-                banner = (TextView) findViewById(R.id.banner);
                 banner.setText("Showing Farmer's Markets near " + query + ":");
-                banner.setVisibility(View.VISIBLE);
+
+                View textDisplay = findViewById(R.id.text_display);
+                textDisplay.setVisibility(View.INVISIBLE);
 
                 this.adapter = new ItemsAdapter(this, R.layout.item_layout, prepareDisplayFromResults(responses));
                 mainListView.setAdapter(adapter);
             } else {
 
                 Toast toast = Toast.makeText(getBaseContext(), "", Toast.LENGTH_LONG);
-                toast.setText("Sorry, no results found for that location");
-                toast.setGravity(Gravity.TOP | Gravity.LEFT, 20, 65);
-                toast.show();
+                banner.setText("Sorry, no results found near " + query);
             }
+            banner.setVisibility(View.VISIBLE);
         }
     }
 
