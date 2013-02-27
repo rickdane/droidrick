@@ -25,6 +25,10 @@ public class DetailsDisplayFragment extends Fragment {
 
     private Map<String, String> item;
 
+    public DetailsDisplayFragment() {
+
+    }
+
     public DetailsDisplayFragment(Map<String, String> item) {
         this.item = item;
     }

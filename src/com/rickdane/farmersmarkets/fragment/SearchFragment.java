@@ -31,6 +31,10 @@ public class SearchFragment extends ListFragment {
     private TabFragment tabFragment;
     private String query;
 
+    public SearchFragment() {
+
+    }
+
     public SearchFragment(TabFragment tabFragment, String query) {
         this.tabFragment = tabFragment;
         this.query = query;
@@ -41,11 +45,6 @@ public class SearchFragment extends ListFragment {
         super.onCreate(savedInstanceState);
 
         searchDao = FarmersMarketGeoSearchDao.getDefaultInstance(getActivity().getApplication());
-
-        //TODO, just for testing, if query is null we won't really want to do this
-        if (query == null) {
-            query = "94523";
-        }
 
         handleIntent(query);
     }

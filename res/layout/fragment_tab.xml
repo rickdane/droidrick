@@ -25,7 +25,7 @@
                 android:id="@+id/details_view_tab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="grid view label" android:background="@drawable/tab" android:padding="10dp"/>
+                android:text="@string/tab_details" android:background="@drawable/tab" android:padding="10dp"/>
     </LinearLayout>
 
     <View

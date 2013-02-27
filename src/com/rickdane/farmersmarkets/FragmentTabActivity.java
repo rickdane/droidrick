@@ -29,7 +29,7 @@ import java.util.Locale;
  */
 public class FragmentTabActivity extends FragmentActivity {
 
-    TabFragment tabFragment;
+  private  TabFragment tabFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,14 +71,6 @@ public class FragmentTabActivity extends FragmentActivity {
                     if (addresses.size() > 0) {
 
                         zipCode = addresses.get(0).getPostalCode();
-                        if (zipCode != null) {
-
-                            //perform location search
-          /*                  Intent intent = new Intent(this, SearchActivity.class);
-                            intent.setAction(Intent.ACTION_SEARCH);
-                            intent.putExtra(SearchManager.QUERY, zipCode);
-                            startActivity(intent);*/
-                        }
                     }
 
 

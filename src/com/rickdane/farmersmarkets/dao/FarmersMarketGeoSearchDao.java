@@ -18,190 +18,192 @@ import java.util.regex.Pattern;
  */
 public class FarmersMarketGeoSearchDao {
 
-  private FarmersMarketsDatabaseHandler farmersMarketsDatabaseHandler;
-  private ZipcodesDatabaseHandler zipcodesDatabaseHandler;
+    private FarmersMarketsDatabaseHandler farmersMarketsDatabaseHandler;
+    private ZipcodesDatabaseHandler zipcodesDatabaseHandler;
 
-  private static Map<String, String> states;
+    private static Map<String, String> states;
 
-  private static FarmersMarketGeoSearchDao defaultInstance;
+    private static FarmersMarketGeoSearchDao defaultInstance;
 
-  //TODO may need to revisit better way to provide singleton such as with IOC container
-  public static FarmersMarketGeoSearchDao getDefaultInstance(Context context) {
-    if (defaultInstance == null) {
-      defaultInstance = new FarmersMarketGeoSearchDao(context);
-    }
-    return defaultInstance;
-  }
-
-  public FarmersMarketGeoSearchDao(Context context) {
-    farmersMarketsDatabaseHandler = FarmersMarketsDatabaseHandler.getDefaultInstance(context);
-    zipcodesDatabaseHandler = ZipcodesDatabaseHandler.getDefaultInstance(context);
-  }
-
-  static {
-    states = new HashMap<String, String>();
-    states.put("Alabama", "AL");
-    states.put("Alaska", "AK");
-    states.put("Alberta", "AB");
-    states.put("American Samoa", "AS");
-    states.put("Arizona", "AZ");
-    states.put("Arkansas", "AR");
-    states.put("Armed Forces (AE)", "AE");
-    states.put("Armed Forces Americas", "AA");
-    states.put("Armed Forces Pacific", "AP");
-    states.put("British Columbia", "BC");
-    states.put("California", "CA");
-    states.put("Colorado", "CO");
-    states.put("Connecticut", "CT");
-    states.put("Delaware", "DE");
-    states.put("District Of Columbia", "DC");
-    states.put("Florida", "FL");
-    states.put("Georgia", "GA");
-    states.put("Guam", "GU");
-    states.put("Hawaii", "HI");
-    states.put("Idaho", "ID");
-    states.put("Illinois", "IL");
-    states.put("Indiana", "IN");
-    states.put("Iowa", "IA");
-    states.put("Kansas", "KS");
-    states.put("Kentucky", "KY");
-    states.put("Louisiana", "LA");
-    states.put("Maine", "ME");
-    states.put("Manitoba", "MB");
-    states.put("Maryland", "MD");
-    states.put("Massachusetts", "MA");
-    states.put("Michigan", "MI");
-    states.put("Minnesota", "MN");
-    states.put("Mississippi", "MS");
-    states.put("Missouri", "MO");
-    states.put("Montana", "MT");
-    states.put("Nebraska", "NE");
-    states.put("Nevada", "NV");
-    states.put("New Brunswick", "NB");
-    states.put("New Hampshire", "NH");
-    states.put("New Jersey", "NJ");
-    states.put("New Mexico", "NM");
-    states.put("New York", "NY");
-    states.put("Newfoundland", "NF");
-    states.put("North Carolina", "NC");
-    states.put("North Dakota", "ND");
-    states.put("Northwest Territories", "NT");
-    states.put("Nova Scotia", "NS");
-    states.put("Nunavut", "NU");
-    states.put("Ohio", "OH");
-    states.put("Oklahoma", "OK");
-    states.put("Ontario", "ON");
-    states.put("Oregon", "OR");
-    states.put("Pennsylvania", "PA");
-    states.put("Prince Edward Island", "PE");
-    states.put("Puerto Rico", "PR");
-    states.put("Quebec", "PQ");
-    states.put("Rhode Island", "RI");
-    states.put("Saskatchewan", "SK");
-    states.put("South Carolina", "SC");
-    states.put("South Dakota", "SD");
-    states.put("Tennessee", "TN");
-    states.put("Texas", "TX");
-    states.put("Utah", "UT");
-    states.put("Vermont", "VT");
-    states.put("Virgin Islands", "VI");
-    states.put("Virginia", "VA");
-    states.put("Washington", "WA");
-    states.put("West Virginia", "WV");
-    states.put("Wisconsin", "WI");
-    states.put("Wyoming", "WY");
-    states.put("Yukon Territory", "YT");
-  }
-
-
-  /**
-   * Logic to attempt to get location based on  user input such as city and state or zip
-   *
-   * @param input
-   * @return
-   */
-  public Collection<Map<String, String>> searchByCityStateorZipInput(String input) {
-
-    Collection<Map<String, String>> responses = new ArrayList<Map<String, String>>();
-
-    input = input.toUpperCase().trim();
-
-    Pattern zipPattern = Pattern.compile("(\\d{5})");
-    Matcher zipMatcher = zipPattern.matcher(input);
-    String zip = null;
-    if (zipMatcher.find()) {
-      zip = zipMatcher.group(1);
+    //TODO may need to revisit better way to provide singleton such as with IOC container
+    public static FarmersMarketGeoSearchDao getDefaultInstance(Context context) {
+        if (defaultInstance == null) {
+            defaultInstance = new FarmersMarketGeoSearchDao(context);
+        }
+        return defaultInstance;
     }
 
-    Double[] latLong = null;
+    public FarmersMarketGeoSearchDao(Context context) {
+        farmersMarketsDatabaseHandler = FarmersMarketsDatabaseHandler.getDefaultInstance(context);
+        zipcodesDatabaseHandler = ZipcodesDatabaseHandler.getDefaultInstance(context);
+    }
 
-    if (zip == null) {
+    static {
+        states = new HashMap<String, String>();
+        states.put("Alabama", "AL");
+        states.put("Alaska", "AK");
+        states.put("Alberta", "AB");
+        states.put("American Samoa", "AS");
+        states.put("Arizona", "AZ");
+        states.put("Arkansas", "AR");
+        states.put("Armed Forces (AE)", "AE");
+        states.put("Armed Forces Americas", "AA");
+        states.put("Armed Forces Pacific", "AP");
+        states.put("British Columbia", "BC");
+        states.put("California", "CA");
+        states.put("Colorado", "CO");
+        states.put("Connecticut", "CT");
+        states.put("Delaware", "DE");
+        states.put("District Of Columbia", "DC");
+        states.put("Florida", "FL");
+        states.put("Georgia", "GA");
+        states.put("Guam", "GU");
+        states.put("Hawaii", "HI");
+        states.put("Idaho", "ID");
+        states.put("Illinois", "IL");
+        states.put("Indiana", "IN");
+        states.put("Iowa", "IA");
+        states.put("Kansas", "KS");
+        states.put("Kentucky", "KY");
+        states.put("Louisiana", "LA");
+        states.put("Maine", "ME");
+        states.put("Manitoba", "MB");
+        states.put("Maryland", "MD");
+        states.put("Massachusetts", "MA");
+        states.put("Michigan", "MI");
+        states.put("Minnesota", "MN");
+        states.put("Mississippi", "MS");
+        states.put("Missouri", "MO");
+        states.put("Montana", "MT");
+        states.put("Nebraska", "NE");
+        states.put("Nevada", "NV");
+        states.put("New Brunswick", "NB");
+        states.put("New Hampshire", "NH");
+        states.put("New Jersey", "NJ");
+        states.put("New Mexico", "NM");
+        states.put("New York", "NY");
+        states.put("Newfoundland", "NF");
+        states.put("North Carolina", "NC");
+        states.put("North Dakota", "ND");
+        states.put("Northwest Territories", "NT");
+        states.put("Nova Scotia", "NS");
+        states.put("Nunavut", "NU");
+        states.put("Ohio", "OH");
+        states.put("Oklahoma", "OK");
+        states.put("Ontario", "ON");
+        states.put("Oregon", "OR");
+        states.put("Pennsylvania", "PA");
+        states.put("Prince Edward Island", "PE");
+        states.put("Puerto Rico", "PR");
+        states.put("Quebec", "PQ");
+        states.put("Rhode Island", "RI");
+        states.put("Saskatchewan", "SK");
+        states.put("South Carolina", "SC");
+        states.put("South Dakota", "SD");
+        states.put("Tennessee", "TN");
+        states.put("Texas", "TX");
+        states.put("Utah", "UT");
+        states.put("Vermont", "VT");
+        states.put("Virgin Islands", "VI");
+        states.put("Virginia", "VA");
+        states.put("Washington", "WA");
+        states.put("West Virginia", "WV");
+        states.put("Wisconsin", "WI");
+        states.put("Wyoming", "WY");
+        states.put("Yukon Territory", "YT");
+    }
 
-      String state = null;
-      String city = null;
 
-      //remove all non-letter characters from input
-      input = input.replaceAll("[^\\p{L}\\p{N}]", "");
+    /**
+     * Logic to attempt to get location based on  user input such as city and state or zip
+     *
+     * @param input
+     * @return
+     */
+    public Collection<Map<String, String>> searchByCityStateorZipInput(String input) {
 
-      //continue on to try to get city / state
-      for (Map.Entry<String, String> entry : states.entrySet()) {
+        Collection<Map<String, String>> responses = new ArrayList<Map<String, String>>();
 
-        String stateName = entry.getKey();
-        String stateAbbrev = entry.getValue();
+        String zip = null;
+        if (input != null) {
+            input = input.toUpperCase().trim();
 
-
-        if (input.toUpperCase().contains(stateName) || input.toUpperCase().contains(stateAbbrev)) {
-          state = stateAbbrev;
-          input = input.replace(stateName, "");
-          input = input.replace(stateAbbrev, "");
-          break;
+            Pattern zipPattern = Pattern.compile("(\\d{5})");
+            Matcher zipMatcher = zipPattern.matcher(input);
+            if (zipMatcher.find()) {
+                zip = zipMatcher.group(1);
+            }
         }
 
-      }
+        Double[] latLong = null;
 
-      if (state != null && input.length() > 3) {
-        //we should be left with the city
-        city = input;
-      }
+        if (zip == null && input != null) {
 
-      if (city != null && state != null) {
+            String state = null;
+            String city = null;
 
-        //get the lat / long based on city and state
-        Map<String, String> location = zipcodesDatabaseHandler.findOneByMultipleFields(new String[]{"city", "state"}, new String[]{city, state});
-        if (location != null) {
-          try {
-            latLong = new Double[2];
-            latLong[0] = Double.parseDouble(location.get("latitude"));
-            latLong[1] = Double.parseDouble(location.get("longitude"));
-          } catch (Exception e) {
-            //TODO pass in logger to be able to use here
-          }
+            //remove all non-letter characters from input
+            input = input.replaceAll("[^\\p{L}\\p{N}]", "");
+
+            //continue on to try to get city / state
+            for (Map.Entry<String, String> entry : states.entrySet()) {
+
+                String stateName = entry.getKey();
+                String stateAbbrev = entry.getValue();
+
+
+                if (input.toUpperCase().contains(stateName) || input.toUpperCase().contains(stateAbbrev)) {
+                    state = stateAbbrev;
+                    input = input.replace(stateName, "");
+                    input = input.replace(stateAbbrev, "");
+                    break;
+                }
+
+            }
+
+            if (state != null && input.length() > 3) {
+                //we should be left with the city
+                city = input;
+            }
+
+            if (city != null && state != null) {
+
+                //get the lat / long based on city and state
+                Map<String, String> location = zipcodesDatabaseHandler.findOneByMultipleFields(new String[]{"city", "state"}, new String[]{city, state});
+                if (location != null) {
+                    try {
+                        latLong = new Double[2];
+                        latLong[0] = Double.parseDouble(location.get("latitude"));
+                        latLong[1] = Double.parseDouble(location.get("longitude"));
+                    } catch (Exception e) {
+                        //TODO pass in logger to be able to use here
+                    }
+                }
+            }
+
+        } else if (zip != null) {
+            //get latLong by zip
+            Map<String, String> matchZipEntry = null;
+            try {
+                matchZipEntry = zipcodesDatabaseHandler.findOneByField("zipcode", zip);
+            } catch (Exception e) {
+                //TODO log exception
+            }
+            if (matchZipEntry != null && !matchZipEntry.isEmpty()) {
+                latLong = new Double[2];
+                latLong[0] = Double.parseDouble(matchZipEntry.get("latitude"));
+                latLong[1] = Double.parseDouble(matchZipEntry.get("longitude"));
+            }
+
         }
-      }
 
-    } else {
-      //get latLong by zip
-      Map<String, String> matchZipEntry = null;
-      try {
-        matchZipEntry = zipcodesDatabaseHandler.findOneByField("zipcode", zip);
-      } catch (Exception e) {
-        //TODO log exception
-      }
-      if (matchZipEntry != null && !matchZipEntry.isEmpty()) {
-        latLong = new Double[2];
-        latLong[0] = Double.parseDouble(matchZipEntry.get("latitude"));
-        latLong[1] = Double.parseDouble(matchZipEntry.get("longitude"));
-      }
+        if (latLong != null) {
+            //we were able to figure out location from user input so can do a search with this
+            responses = farmersMarketsDatabaseHandler.geoSearch(latLong[0], latLong[1], .5);
+        }
 
+        return responses;
     }
-
-    if (latLong != null) {
-      //we were able to figure out location from user input so can do a search with this
-      responses = farmersMarketsDatabaseHandler.geoSearch(latLong[0], latLong[1], .5);
-    }
-
-    return responses;
-  }
 
 
 }

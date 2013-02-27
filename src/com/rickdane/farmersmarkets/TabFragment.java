@@ -28,6 +28,14 @@ public class TabFragment extends Fragment {
     private View view;
     private int[] viewIds;
 
+    //these are cached, previous fragments, TODO check best practice for this
+    private Fragment lastSearchFragment;
+    private Fragment lastDisplayFragment;
+
+    //TODO this is hack to make this value persistent across orientation changes, figure out best practice for this
+    private static HashMap<String, String> lastItem;
+    private static String lastQuery;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_tab, container, false);
@@ -38,7 +46,7 @@ public class TabFragment extends Fragment {
         Button listViewTab = (Button) view.findViewById(R.id.list_view_tab);
         Button displayViewTab = (Button) view.findViewById(R.id.details_view_tab);
 
-         viewIds = new int[]{R.id.list_view_tab, R.id.details_view_tab};
+        viewIds = new int[]{R.id.list_view_tab, R.id.details_view_tab};
 
         listViewTab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +87,7 @@ public class TabFragment extends Fragment {
         if (curTabState != LISTINGS_STATE) {
             curTabState = LISTINGS_STATE;
 
-            changeTab(viewIds,  view.findViewById(R.id.list_view_tab));
+            changeTab(viewIds, view.findViewById(R.id.list_view_tab));
 
             // Fragments have access to their parent Activity's FragmentManager. You can
             // obtain the FragmentManager like this.
@@ -91,7 +99,19 @@ public class TabFragment extends Fragment {
                 // currently inside R.id.fragment_content and add the new Fragment
                 // in its place.
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.fragment_content, new SearchFragment(this, query));          //()     TestListFragment()
+
+                Fragment searchFragment = lastSearchFragment;
+                if (query == null) {
+                    query = lastQuery;
+                }
+                lastQuery = query;
+                if (query != null || searchFragment == null) {
+                    //if we have a query, create new fragment or, if lastSearchFragment is null, we create a new one to show default blank list
+                    searchFragment = new SearchFragment(this, query);
+                    lastSearchFragment = searchFragment;
+                }
+
+                ft.replace(R.id.fragment_content, searchFragment);          //()     TestListFragment()
                 ft.commit();
             }
         }
@@ -118,7 +138,19 @@ public class TabFragment extends Fragment {
                 // currently inside R.id.fragment_content and add the new Fragment
                 // in its place.
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.fragment_content, new DetailsDisplayFragment(item));
+
+                Fragment fragment = lastDisplayFragment;
+                if (item == null) {
+                    item = lastItem;
+                }
+                lastItem = item;
+                if (item != null || fragment == null) {
+                    //if we have a query, create new fragment or, if lastSearchFragment is null, we create a new one to show default blank list
+                    fragment = new DetailsDisplayFragment(item);
+                    lastDisplayFragment = fragment;
+                }
+
+                ft.replace(R.id.fragment_content, fragment);
                 ft.commit();
             }
         }
