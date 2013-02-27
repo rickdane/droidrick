@@ -85,10 +85,10 @@ public class MainActivity extends Activity {
                         if (zipCode != null) {
 
                             //perform location search
-                            Intent intent = new Intent(this, SearchActivity.class);
+          /*                  Intent intent = new Intent(this, SearchActivity.class);
                             intent.setAction(Intent.ACTION_SEARCH);
                             intent.putExtra(SearchManager.QUERY, zipCode);
-                            startActivity(intent);
+                            startActivity(intent);*/
                         }
                     }
 

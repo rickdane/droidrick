@@ -29,9 +29,11 @@ public class SearchFragment extends ListFragment {
     private ItemsAdapter adapter;
     private TextView banner;
     private TabFragment tabFragment;
+    private String query;
 
-    public SearchFragment(TabFragment tabFragment) {
+    public SearchFragment(TabFragment tabFragment, String query) {
         this.tabFragment = tabFragment;
+        this.query = query;
     }
 
     @Override
@@ -40,25 +42,25 @@ public class SearchFragment extends ListFragment {
 
         searchDao = FarmersMarketGeoSearchDao.getDefaultInstance(getActivity().getApplication());
 
-        handleIntent(getActivity().getIntent());
+        //TODO, just for testing, if query is null we won't really want to do this
+        if (query == null) {
+            query = "94523";
+        }
+
+        handleIntent(query);
     }
 
     /**
      * This should possibly be renamed, its not exactly handling intent, more handling "focus" event, such as tab change
      *
-     * @param intent
+     * @param query
      */
-    private void handleIntent(Intent intent) {
-
-        //TODO put this back in, just disabled for testing
-        //   if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
+    private void handleIntent(String query) {
 
         Activity activity = getActivity();
 
         if (activity != null) {
 
-            // String query = intent.getStringExtra(SearchManager.QUERY);
-            String query = "94523";
             Collection<Map<String, String>> responses = searchDao.searchByCityStateorZipInput(query);
 
             if (responses.isEmpty()) {
@@ -145,7 +147,7 @@ public class SearchFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
 
-      HashMap<String, String> item = (HashMap<String, String>) this.adapter.getItem(position);
+        HashMap<String, String> item = (HashMap<String, String>) this.adapter.getItem(position);
 
         //change to other fragment
         tabFragment.gotoDetailsView(item);

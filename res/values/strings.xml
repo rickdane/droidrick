@@ -3,4 +3,7 @@
     <string name="app_name">Farmers Markets</string>
     <string name="search_label">Search</string>
     <string name="search_hint">Enter Location</string>
+
+    <string name="tab_search_results">Listings</string>
+    <string name="tab_details">Details</string>
 </resources>

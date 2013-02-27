@@ -7,20 +7,25 @@
     <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="10dp" >
+            android:gravity="bottom|left"
+            android:paddingTop="5dp">
 
         <Button
                 android:id="@+id/list_view_tab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search Results" />
+                android:text="Search Results" android:background="@drawable/tab" android:padding="10dp"
+                />
 
+        <Space
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/space"/>
         <Button
-                android:id="@+id/grid_view_tab"
+                android:id="@+id/details_view_tab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="grid view label" />
+                android:text="grid view label" android:background="@drawable/tab" android:padding="10dp"/>
     </LinearLayout>
 
     <View
