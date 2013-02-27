@@ -31,6 +31,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+
+        //test fragment tab
+        Intent fragmentIntent = new Intent(this, FragmentTabActivity.class);
+        startActivity(fragmentIntent);
+
+
         TextView itemDisplay = (TextView) findViewById(R.id.text_display);
         itemDisplay.setBackgroundResource(R.drawable.farmers_market_bg);
         itemDisplay.setHeight(AbsListView.LayoutParams.MATCH_PARENT);

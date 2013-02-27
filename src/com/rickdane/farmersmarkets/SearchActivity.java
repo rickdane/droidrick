@@ -67,7 +67,8 @@ public class SearchActivity extends ListActivity {
 
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
 
-            String query = intent.getStringExtra(SearchManager.QUERY);
+           // String query = intent.getStringExtra(SearchManager.QUERY);
+          String query = "94523";
             Collection<Map<String, String>> responses = searchDao.searchByCityStateorZipInput(query);
 
             setContentView(R.layout.main);
