@@ -44,42 +44,6 @@ public class FragmentTabActivity extends FragmentActivity {
             Log.w("--Exception trying to create DB", e);
         }
 
-        //attempt to get user's current location
-        LocationManager locationManager = (LocationManager)
-                getSystemService(Context.LOCATION_SERVICE);
-        Location loc;
-        String zipCode = null;
-        if (locationManager != null) {
-            loc = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            if (loc == null) {
-                //try to get from network (such as wifi)
-                loc = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-            }
-            if (loc == null) {
-                //try to get from passive provider //TODO figure out what exactly this is and if we want to use this
-                loc = locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
-            }
-            if (loc != null) {
-
-                Geocoder gcd = new Geocoder(getBaseContext(),
-                        Locale.getDefault());
-
-                List<Address> addresses;
-                try {
-                    addresses = gcd.getFromLocation(loc.getLatitude(),
-                            loc.getLongitude(), 1);
-                    if (addresses.size() > 0) {
-
-                        zipCode = addresses.get(0).getPostalCode();
-                    }
-
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
 
         // Notice how there is not very much code in the Activity. All the business logic for
         // rendering tab content and even the logic for switching between tabs has been pushed
@@ -98,7 +62,7 @@ public class FragmentTabActivity extends FragmentActivity {
             onNewIntent(getIntent());
         } else {
             //this is the tab that is displayed by default
-            tabFragment.goToSearchResultsView(zipCode);
+            tabFragment.displayDefault();
         }
 
     }
